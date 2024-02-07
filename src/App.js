@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import DefaultConponent from './components/DefaultConponent/DefaultConponent'
 import {routes} from './routes'
+import MainConponent from './components/MainConponent/MainConponent'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           {routes.map((route) => {
             const Page = route.page
-            const Layout = route.isShowHeader ? DefaultConponent : Fragment
+            const Layout = route.isShowHeader ? MainConponent : Fragment
             return (
               <Route key={route.path} path={route.path} element = {
                 <Layout>
