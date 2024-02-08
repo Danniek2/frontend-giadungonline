@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 const HeaderConponent = () => {
   return (
     <div>
-      <WrapperHeader gutter={30}>
+      <WrapperHeader>
         <Col span={1}>
           <img src="logogiadung.png" alt="logo" width={40} height={40} />
         </Col>
@@ -33,7 +33,7 @@ const HeaderConponent = () => {
           />
         </Col>
 
-        <Col span={6} style={{ display: "flex", gap: "20px" }}>
+        <Col span={6} style={{ display: "flex", gap: "30px"}}>
           <WrapperAccoutHeader>
             <UserOutlined style={{ fontSize: "25px" }} />
             <div>
